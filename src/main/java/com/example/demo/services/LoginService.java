@@ -24,4 +24,9 @@ public class LoginService {
     return new LoginResponse(404, "Autenticación fallida");
   }
 
+  @PostMapping("/close")
+  public LoginResponse CloseLogin(){
+    return new LoginResponse(200,"Sesión cerrada");
+  }
+
 }
